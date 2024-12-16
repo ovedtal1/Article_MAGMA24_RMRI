@@ -11,6 +11,14 @@ import os
 import sys
 import subprocess
 
+if 'BART_TOOLBOX_PATH' in os.environ and os.path.exists(os.environ['BART_TOOLBOX_PATH']):
+	sys.path.append(os.path.join(os.environ['BART_TOOLBOX_PATH'], 'python'))
+elif 'TOOLBOX_PATH' in os.environ and os.path.exists(os.environ['TOOLBOX_PATH']):
+	sys.path.append(os.path.join(os.environ['TOOLBOX_PATH'], 'python'))
+else:
+	raise RuntimeError("BART_TOOLBOX_PATH is not set correctly!")
+
+
 # Utils
 # Mask generation function
 def create_brain_masks(mri_scan, loose_padding=5, hole_structre=5):
