@@ -20,7 +20,7 @@ The code was tested on Debian 12.
 
 ## Data
 
-k-Space data to reproduce the reconstructions (Figures 6 and 7) is hosted on Zenodo.
+k-Space data to reproduce the reconstructions (Figures 6 and 7) is hosted on Zenodo [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14497769.svg)](https://doi.org/10.5281/zenodo.14497769).
 The data can be downloaded with the script in `Data/download_data.sh`.
 
 ## Reproducing
